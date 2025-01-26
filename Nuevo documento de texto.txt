@@ -1,0 +1,74 @@
+#Manejo de strings
+print("**********************************************************************")
+print("                          MANEJO DE STRINGS                           ")
+print("**********************************************************************")
+
+#primer ejercioo uso del ciclo for con srtings
+cadena="la tierra es redonda"
+
+for i in cadena:
+  print(i)
+
+# uso del count lo que hace es contabilizar el total de caracteres del string
+cadenaNueva="Mackbook pro"
+print("La letra o aparece : ", cadenaNueva.count("o"), "Tantas veces")
+
+# uso del capitalize() devuelve una copia de la cadena con la primera letra en mayúscula
+cadena
+print(cadena.capitalize())
+
+# uso isalnum() devuelve cierto si la cadena es no vacía y sólo contiene letras y dígitos.
+cadena
+print(cadena.isalnum())
+
+#isalpha() devuelve cierto si la cadena es no vacía y sólo contiene letras.
+cadena
+print(cadena.isalpha())
+
+#isdigit() devuelve cierto si la cadena es no vacía y sólo contiene dígitos
+cadena1='123123'
+cadena2='Hola a todos'
+print(cadena1.isdigit())
+print(cadena2.isdigit())
+
+#islower() devuelve cierto si todas las letras de la cadena son minúsculas y hay al menos una minúscula.
+cadena23="hola"
+print(cadena23.islower())
+
+#isspace() devuelve cierto si la cadena es no vacía y todos sus caracteres son espacios.
+cadena_vacia=("       ")
+cadena_novacia=(" a e i o u ")
+print(cadena_vacia.isspace())
+print(cadena_novacia.isspace())
+
+#isupper() devuelve cierto si todas las letras de la cadena son mayúsculas y hay al menos una mayúscula
+cadena_ejemplo="ESTE ES UN STRING MAYUSCULAS"
+cadena_ejemplo2="este es un string minusculas"
+print(cadena_ejemplo.isupper())
+print(cadena_ejemplo2.isupper())
+
+#lstrip() devuelve una copia de la cadena con los blancos iniciales omitidos
+cadena
+print(cadena.lstrip())
+
+#split([s]) devuelve una lista que contiene las palabras de la cadena. Si se incluye la cadena s, se utiliza como separador.
+cadena
+print(cadena.split('e'))
+
+print("**********************************************************************")
+print("                          USO DE SUBSECUENCIAS                        ")
+print("**********************************************************************")
+
+cadena_caracteres="cadena"
+#decimos que imprima la letra que esta en la posicion 3 en este casi es la e
+print(cadena_caracteres[3])
+#decimos que imprima  el -1 iniciando desde la derecha
+print(cadena_caracteres[-1])
+#Aqui le decimos que imprima la letras que estan en la posion 3 hasta la 5
+print(cadena_caracteres[3:5])
+#aqui le decimos que avance dos posicones apartir de la posicion 2 y que se regrese dos posiciones
+print(cadena_caracteres[2:-2])
+#Aqui le decimos que imprima las 3 primeras posiciones de la cadena [0,1,2]
+print(cadena_caracteres[:3])
+#Aqui le decimos que imprima las utlimas 3 posiciones de la cadena [3,4,5]
+print(cadena_caracteres[3:])
